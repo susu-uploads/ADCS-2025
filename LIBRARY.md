@@ -1,10 +1,12 @@
-# Литература
+# Дополнительные материалы
 
-| Наименование | Источник |
-|---|---|
-| Alex_Borysov_gRPC_Joker | [Alex_Borysov_gRPC_Joker.pdf](library/Alex_Borysov_gRPC_Joker.pdf) |
-| George-Coulouris-Distributed-Systems-Concepts-and-Design-5th-Edition | [George-Coulouris-Distributed-Systems-Concepts-and-Design-5th-Edition.pdf](library/George-Coulouris-Distributed-Systems-Concepts-and-Design-5th-Edition.pdf) |
-| book.mixu.net-Distributed systems | [book.mixu.net-Distributed systems.pdf](library/book.mixu.net-Distributed%20systems.pdf) |
-| Введение в распределенные вычисления | [Введение в распределенные вычисления.pdf](library/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B2%20%D1%80%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%B2%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F.pdf) |
-| Знакомство с Apache Spark | [Знакомство с Apache Spark.pdf](library/%D0%97%D0%BD%D0%B0%D0%BA%D0%BE%D0%BC%D1%81%D1%82%D0%B2%D0%BE%20%D1%81%20Apache%20Spark.pdf) |
-| Проектирование REST | [Проектирование REST.pdf](library/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20REST.pdf) |
+| Название | Источник |
+| --- | --- |
+| Distributed Systems: Concepts and Design | [https://edu.susu.ru/mod/resource/view.php?id=8137156](https://edu.susu.ru/mod/resource/view.php?id=8137156) |
+| Введение в распределенные вычисления | [https://edu.susu.ru/mod/resource/view.php?id=8137157](https://edu.susu.ru/mod/resource/view.php?id=8137157) |
+| Подходы к проектированию RESTful API | [https://edu.susu.ru/mod/resource/view.php?id=8137158](https://edu.susu.ru/mod/resource/view.php?id=8137158) |
+| Знакомство с Apache Spark | [https://edu.susu.ru/mod/resource/view.php?id=8137159](https://edu.susu.ru/mod/resource/view.php?id=8137159) |
+| Distributed systems for Fun and Profit | [https://edu.susu.ru/mod/resource/view.php?id=8137160](https://edu.susu.ru/mod/resource/view.php?id=8137160) |
+| Alex Borysov об gRPC | [https://edu.susu.ru/mod/resource/view.php?id=8137161](https://edu.susu.ru/mod/resource/view.php?id=8137161) |
+| «Распределенные системы. Паттерны проектирования» | [https://habr.com/ru/company/piter/blog/440444/](https://habr.com/ru/company/piter/blog/440444/), [https://azure.microsoft.com/en-us/resources/designing-distributed-systems/](https://azure.microsoft.com/en-us/resources/designing-distributed-systems/) |
+| «Осваиваем Kubernetes. Оркестрация контейнерных архитектур» | [https://habr.com/ru/company/piter/blog/441910/](https://habr.com/ru/company/piter/blog/441910/) |

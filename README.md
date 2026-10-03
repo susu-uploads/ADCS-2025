@@ -1,3 +1,3 @@
 # 2025/2026 Архитектура распределенных вычислительных систем (очная)
 
-## Architecture of Distributed Computing Systems | 2025
+## 2025/2026 Architecture of Distributed Computing Systems (full-time)
