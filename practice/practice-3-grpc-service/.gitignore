@@ -3,3 +3,5 @@
 !/grpc/gradle/wrapper/gradle-wrapper.jar
 
 !grpc/gradle/wrapper/gradle-wrapper.jar
+/.cache/
+/.report/

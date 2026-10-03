@@ -3,3 +3,5 @@
 !/sockets/gradle/wrapper/gradle-wrapper.jar
 
 !sockets/gradle/wrapper/gradle-wrapper.jar
+/.cache/
+/.report/

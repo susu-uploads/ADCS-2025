@@ -3,3 +3,5 @@
 !/serializations/gradle/wrapper/gradle-wrapper.jar
 
 !serializations/gradle/wrapper/gradle-wrapper.jar
+/.cache/
+/.report/
