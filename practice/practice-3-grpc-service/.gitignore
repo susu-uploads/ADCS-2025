@@ -1,0 +1,5 @@
+# Локальный кэш Kotlin и Gradle Wrapper этой практики
+/grpc/.kotlin/
+!/grpc/gradle/wrapper/gradle-wrapper.jar
+
+!grpc/gradle/wrapper/gradle-wrapper.jar

@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package social.users;
+
+option java_multiple_files = true;
+option java_outer_classname = "UsersProto";
+option java_package = "org.alexcawl.contract.users.proto";
+
+import "entity.proto";
+
+service UsersService {
+  rpc AuthorizeUser(AuthorizeUserRequest) returns (AuthorizeUserResponse);
+}
+
+message AuthorizeUserRequest {
+  string name = 1;
+}
+
+message AuthorizeUserResponse {
+  oneof result {
+    entity.User user = 1;
+    entity.Failure validation_failure = 2;
+  }
+}

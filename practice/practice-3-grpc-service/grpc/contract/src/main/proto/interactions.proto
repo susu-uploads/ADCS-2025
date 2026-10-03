@@ -1,0 +1,57 @@
+syntax = "proto3";
+
+package social.interactions;
+
+option java_multiple_files = true;
+option java_outer_classname = "InteractionsProto";
+option java_package = "org.alexcawl.contract.interactions.proto";
+
+import "entity.proto";
+
+service InteractionsService {
+  rpc LikePost(LikePostRequest) returns (LikePostResponse);
+  rpc DislikePost(DislikePostRequest) returns (DislikePostResponse);
+  rpc CommentPost(CommentPostRequest) returns (CommentPostResponse);
+}
+
+message LikePostRequest {
+  int64 post_id = 1;
+  string author_id = 2;
+}
+
+message LikePostResponse {
+  oneof result {
+    entity.Post post = 1;
+    entity.Failure validation_failure = 2;
+    entity.Failure not_found_failure = 3;
+    entity.Failure conflict_failure = 4;
+  }
+}
+
+message DislikePostRequest {
+  int64 post_id = 1;
+  string author_id = 2;
+}
+
+message DislikePostResponse {
+  oneof result {
+    entity.Post post = 1;
+    entity.Failure validation_failure = 2;
+    entity.Failure not_found_failure = 3;
+    entity.Failure conflict_failure = 4;
+  }
+}
+
+message CommentPostRequest {
+  int64 post_id = 1;
+  string author_id = 2;
+  string text = 3;
+}
+
+message CommentPostResponse {
+  oneof result {
+    entity.Post post = 1;
+    entity.Failure validation_failure = 2;
+    entity.Failure not_found_failure = 3;
+  }
+}

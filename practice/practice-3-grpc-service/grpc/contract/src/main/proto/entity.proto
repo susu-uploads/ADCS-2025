@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+package social.entity;
+
+option java_multiple_files = true;
+option java_outer_classname = "SocialEntityProto";
+option java_package = "org.alexcawl.contract.entity.proto";
+
+message Post {
+  int64 id = 1;
+  User author = 2;
+  string text = 3;
+  int64 created_at_epoch_millis = 4;
+  repeated User liked_by = 5;
+  repeated Comment comments = 6;
+}
+
+message Comment {
+  int64 id = 1;
+  int64 post_id = 2;
+  User author = 3;
+  string text = 4;
+  int64 created_at_epoch_millis = 5;
+}
+
+message User {
+  string id = 1;
+  string name = 2;
+}
+
+message Failure {
+  string message = 1;
+}
+
+message Feed {
+  repeated Post posts = 1;
+}

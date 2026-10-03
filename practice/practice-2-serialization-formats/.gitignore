@@ -1,0 +1,5 @@
+# Локальный кэш Kotlin и Gradle Wrapper этой практики
+/serializations/.kotlin/
+!/serializations/gradle/wrapper/gradle-wrapper.jar
+
+!serializations/gradle/wrapper/gradle-wrapper.jar

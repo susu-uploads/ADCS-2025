@@ -1,0 +1,76 @@
+package org.alexcawl.sockets.client.ui.main.screen.component
+
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.Icon
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedButton
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
+import org.alexcawl.socket_project.client.generated.resources.Res
+import org.alexcawl.socket_project.client.generated.resources.ic_chat
+import org.alexcawl.sockets.client.ui.main.MainChatItemUiState
+import org.jetbrains.compose.resources.DrawableResource
+import org.jetbrains.compose.resources.painterResource
+
+@Composable
+internal fun MainChatItem(
+    chat: MainChatItemUiState,
+    onClick: () -> Unit,
+    actionText: String? = null,
+    actionIcon: DrawableResource? = null,
+    onActionClick: (() -> Unit)? = null,
+    modifier: Modifier = Modifier,
+) {
+    val containerColor = if (chat.isSelected) {
+        MaterialTheme.colorScheme.secondaryContainer
+    } else {
+        MaterialTheme.colorScheme.surfaceContainer
+    }
+    Card(
+        onClick = onClick,
+        modifier = modifier.fillMaxWidth(),
+        colors = CardDefaults.cardColors(containerColor = containerColor),
+    ) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 12.dp, vertical = 10.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(8.dp),
+        ) {
+            Icon(
+                painter = painterResource(resource = Res.drawable.ic_chat),
+                contentDescription = null,
+                modifier = Modifier.size(18.dp),
+            )
+            Text(
+                text = chat.title,
+                style = MaterialTheme.typography.bodyMedium,
+                maxLines = 1,
+            )
+            Spacer(modifier = Modifier.weight(1f))
+            if (actionText != null && onActionClick != null) {
+                OutlinedButton(onClick = onActionClick) {
+                    if (actionIcon != null) {
+                        Icon(
+                            painter = painterResource(resource = actionIcon),
+                            contentDescription = null,
+                            modifier = Modifier.size(18.dp),
+                        )
+                    }
+                    Text(actionText)
+                }
+            }
+        }
+    }
+}

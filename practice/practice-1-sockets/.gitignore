@@ -1,0 +1,5 @@
+# Локальный кэш Kotlin и Gradle Wrapper этой практики
+/sockets/.kotlin/
+!/sockets/gradle/wrapper/gradle-wrapper.jar
+
+!sockets/gradle/wrapper/gradle-wrapper.jar
